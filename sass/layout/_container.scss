@@ -1,0 +1,10 @@
+@use "../abstracts" as abs;
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: abs.$primary-font;
+}
