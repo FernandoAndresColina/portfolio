@@ -37,3 +37,27 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin btn-contact-me() {
+  display: inline-block;
+  color: v.$white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2.29px;
+
+  position: relative;
+  padding: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: -8px;
+    width: 94%;
+    height: 2px;
+    background-color: v.$green-color;
+    transition: background-color 0.3s ease;
+  }
+}

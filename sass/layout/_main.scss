@@ -1,0 +1,70 @@
+@use "../abstracts" as abs;
+
+main {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+
+    border-bottom: 2px solid white;
+    padding-bottom: 80px;
+
+    .hero-title {
+      color: abs.$white-color;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0 0 10px 0;
+
+      span {
+        position: relative;
+        display: inline-block;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 97%;
+          height: 4px;
+          background-color: abs.$green-color;
+        }
+      }
+    }
+    .hero-bio {
+      color: abs.$white-color;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+    .btn-contact {
+      @include abs.btn-contact-me();
+    }
+  }
+
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+    .skill-card {
+      h3 {
+        color: abs.$white-color;
+        font-size: 32px;
+        margin-bottom: 1px;
+      }
+      p {
+        color: abs.$grey-color;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 24px 0;
+      }
+    }
+  }
+}
