@@ -8,182 +8,258 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <img src="img/lines_circule_left.svg" alt="" class="lines-circules" />
-        <img src="img/oval_right.svg" alt="" class="oval" />
+    <header class="header container">
+      <img src="img/lines_circule_left.svg" alt="" class="lines-circules" />
+      <img src="img/oval_right.svg" alt="" class="oval" />
 
-        <div class="header-container">
-          <h1>adamkeyes</h1>
-          <nav class="primary-nav">
+      <div class="header-container">
+        <h1>adamkeyes</h1>
+        <nav class="primary-nav">
+          <ul>
+            <li>
+              <a href="#"><img src="img/icons_github.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icons_frontendmentor.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icons_LinkedIn.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/icons_twitter.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+        <img src="img/person-img.png" alt="" />
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-section">
+        <h2 class="hero-title">
+          Nice to meet you! <br />
+          I’m <span>Adam Keyes.</span>
+        </h2>
+        <p class="hero-bio">
+          Based in the UK, I’m a front-end developer passionate about building
+          accessible web apps that users love.
+        </p>
+        <a href="#" class="btn-contact">CONTACT ME</a>
+      </section>
+
+      <section class="skills-section">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-card">
+          <h3>Javascript</h3>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-card">
+          <h3>Accessibility</h3>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill-card">
+          <h3>React</h3>
+          <p>3 Years Experience</p>
+        </div>
+        <div class="skill-card">
+          <h3>Sass</h3>
+          <p>3 Years Experience</p>
+        </div>
+
+        <img class="lines_right" src="img/lines_circule_right.svg" alt="" />
+      </section>
+
+      <section class="projects-section">
+        <div class="projects-headers">
+          <h2>Projects</h2>
+          <a href="#" class="btn-contact">CONTACT ME</a>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img
+              src="img/design-portfolio.png"
+              alt="Design Portfolio preview"
+            />
+            <h3 class="project-title">DESIGN PORTFOLIO</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="img/elearning-landingpage.png"
+              alt="Elearning landing page preview"
+            />
+            <h3 class="project-title">E-LEARNING LANDING PAGE</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/todoweb.png" alt="Todo Web preview" />
+            <h3 class="project-title">TODO WEB APP</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="img/entertainment-web.png"
+              alt="Entertainment Web preview"
+            />
+            <h3 class="project-title">ENTERTAINMENT WEB APP</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/memory-game.png" alt="Memory Game preview" />
+            <h3 class="project-title">MEMORY GAME</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="img/artgallery.png" alt="Gallery Showcase preview" />
+            <h3 class="project-title">ART GALLERY SHOWCASE</h3>
+            <ul class="project-tags">
+              <li>HTMLS</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="#" class="btn-link">View Porject</a>
+              <a href="#" class="btn-link">View Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2>Contact</h2>
+          <p>
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="NAME"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EMAIL"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="MESSAGE"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">SEND MESSAGE</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <hr class="footer-divider" />
+        <div class="footer-nav-container">
+          <h3>adamkeyes</h3>
+          <nav class="footer-nav">
             <ul>
               <li>
-                <a href="#"><img src="img/icons_github.svg" alt="" /></a>
+                <a href="#"><img src="img/icons_github.svg" alt="GitHub" /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="img/icons_frontendmentor.svg" alt=""
+                  ><img
+                    src="img/icons_frontendmentor.svg"
+                    alt="Frontent Mentor"
                 /></a>
               </li>
               <li>
-                <a href="#"><img src="img/icons_LinkedIn.svg" alt="" /></a>
+                <a href="#"
+                  ><img src="img/icons_LinkedIn.svg" alt="LinkedIn"
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="img/icons_twitter.svg" alt="" /></a>
+                <a href="#"
+                  ><img src="img/icons_twitter.svg" alt="Twitter"
+                /></a>
               </li>
             </ul>
           </nav>
-          <img src="img/person-img.png" alt="" />
         </div>
-      </header>
-
-      <main>
-        <section class="hero-section">
-          <h2 class="hero-title">
-            Nice to meet you! <br />
-            I’m <span>Adam Keyes.</span>
-          </h2>
-          <p class="hero-bio">
-            Based in the UK, I’m a front-end developer passionate about building
-            accessible web apps that users love.
-          </p>
-          <a href="#" class="btn-contact">CONTACT ME</a>
-        </section>
-
-        <section class="skills-section">
-          <div class="skill-card">
-            <h3>HTML</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div class="skill-card">
-            <h3>CSS</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div class="skill-card">
-            <h3>Javascript</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div class="skill-card">
-            <h3>Accessibility</h3>
-            <p>4 Years Experience</p>
-          </div>
-          <div class="skill-card">
-            <h3>React</h3>
-            <p>3 Years Experience</p>
-          </div>
-          <div class="skill-card">
-            <h3>Sass</h3>
-            <p>3 Years Experience</p>
-          </div>
-
-          <img class="lines_right" src="img/lines_circule_right.svg" alt="" />
-        </section>
-
-        <section class="projects-section">
-          <div class="projects-headers">
-            <h2>Projects</h2>
-            <a href="#" class="btn-contact">CONTACT ME</a>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card">
-              <img
-                src="img/design-portfolio.png"
-                alt="Design Portfolio preview"
-              />
-              <h3 class="project-title">DESIGN PORTFOLIO</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img
-                src="img/elearning-landingpage.png"
-                alt="Elearning landing page preview"
-              />
-              <h3 class="project-title">E-LEARNING LANDING PAGE</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="img/todoweb.png" alt="Todo Web preview" />
-              <h3 class="project-title">TODO WEB APP</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img
-                src="img/entertainment-web.png"
-                alt="Entertainment Web preview"
-              />
-              <h3 class="project-title">ENTERTAINMENT WEB APP</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="img/memory-game.png" alt="Memory Game preview" />
-              <h3 class="project-title">MEMORY GAME</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="img/artgallery.png" alt="Gallery Showcase preview" />
-              <h3 class="project-title">ART GALLERY SHOWCASE</h3>
-              <ul class="project-tags">
-                <li>HTMLS</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-
-              <div class="project-links">
-                <a href="#" class="btn-link">View Porject</a>
-                <a href="#" class="btn-link">View Code</a>
-              </div>
-            </article>
-          </div>
-        </section>
-      </main>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

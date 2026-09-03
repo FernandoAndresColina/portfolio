@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+@use "../abstracts" as abs;
+
+.footer {
+  background-image: abs.$gradient-footer;
+  .contact-container {
+    .contact-text {
+      text-align: center;
+      h2 {
+        color: abs.$white-color;
+      }
+      p {
+        color: abs.$white-color;
+      }
+    }
+  }
+}

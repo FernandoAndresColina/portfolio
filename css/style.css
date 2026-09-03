@@ -23,6 +23,19 @@ html body {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.footer {
+  background-image: linear-gradient(to bottom, rgba(151, 151, 151, 0.1), rgba(151, 151, 151, 0));
+}
+.footer .contact-container .contact-text {
+  text-align: center;
+}
+.footer .contact-container .contact-text h2 {
+  color: rgb(255, 255, 255);
+}
+.footer .contact-container .contact-text p {
+  color: rgb(255, 255, 255);
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -150,7 +163,7 @@ main .skills-section .skill-card p {
 main .skills-section .lines_right {
   position: absolute;
   width: 55%;
-  right: -5%;
+  right: -4%;
   top: 90%;
 }
 main .projects-section .projects-headers {

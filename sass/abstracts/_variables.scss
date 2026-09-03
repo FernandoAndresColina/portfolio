@@ -14,6 +14,11 @@ $green-color: #4ee1a0;
 $darkgrey-color: #242424;
 $grey-color: #d9d9d9;
 $white-color: rgb(255, 255, 255);
+$gradient-footer: linear-gradient(
+  to bottom,
+  rgba(151, 151, 151, 0.1),
+  rgba(151, 151, 151, 0)
+);
 
 // font
 $primary-font: "Space Grotesk", sans-serif;
