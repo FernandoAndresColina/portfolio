@@ -30,6 +30,11 @@
     left: -50%;
     top: 30%;
     z-index: -1;
+    @include abs.breakpoint(tablet) {
+      width: 30%;
+      left: 0;
+      top: 100%;
+    }
   }
   .oval {
     position: absolute;
@@ -80,8 +85,12 @@
 
     @include abs.breakpoint(tablet) {
       position: absolute;
-      width: 50%;
+      width: 40%;
       z-index: 1;
+      right: 0%;
+      top: 0%;
+      padding-top: 50px;
+      background: abs.$person-bg;
     }
   }
 
@@ -95,11 +104,32 @@
     border-bottom: 2px solid white;
     padding-bottom: 80px;
 
+    @include abs.breakpoint(tablet) {
+      align-items: start;
+      text-align: left;
+    }
+
     .hero-title {
       color: abs.$white-color;
       font-size: 40px;
       line-height: 40px;
       margin: 0 0 10px 0;
+      .mobile-break1 {
+        display: none;
+      }
+
+      @include abs.breakpoint(tablet) {
+        font-size: 70px;
+        max-width: 460px;
+        line-height: 85px;
+        margin-bottom: 35px;
+        .mobile-break1 {
+          display: block;
+        }
+        .mobile-break2 {
+          display: none;
+        }
+      }
       span {
         position: relative;
         display: inline-block;
@@ -119,7 +149,7 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 30px;
-      max-width: 600px;
+      max-width: 455px;
       margin-bottom: 20px;
     }
     .btn-contact {

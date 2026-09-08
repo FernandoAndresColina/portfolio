@@ -200,6 +200,13 @@ html body {
   top: 30%;
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .header .lines-circules {
+    width: 30%;
+    left: 0;
+    top: 100%;
+  }
+}
 .header .oval {
   position: absolute;
   width: 30%;
@@ -253,8 +260,12 @@ html body {
 @media (min-width: 768px) {
   .header .profile-img {
     position: absolute;
-    width: 50%;
+    width: 40%;
     z-index: 1;
+    right: 0%;
+    top: 0%;
+    padding-top: 50px;
+    background: rgba(151, 151, 151, 0.1);
   }
 }
 .header .hero-section {
@@ -266,11 +277,34 @@ html body {
   border-bottom: 2px solid white;
   padding-bottom: 80px;
 }
+@media (min-width: 768px) {
+  .header .hero-section {
+    align-items: start;
+    text-align: left;
+  }
+}
 .header .hero-section .hero-title {
   color: rgb(255, 255, 255);
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 10px 0;
+}
+.header .hero-section .hero-title .mobile-break1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header .hero-section .hero-title {
+    font-size: 70px;
+    max-width: 460px;
+    line-height: 85px;
+    margin-bottom: 35px;
+  }
+  .header .hero-section .hero-title .mobile-break1 {
+    display: block;
+  }
+  .header .hero-section .hero-title .mobile-break2 {
+    display: none;
+  }
 }
 .header .hero-section .hero-title span {
   position: relative;
@@ -290,7 +324,7 @@ html body {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  max-width: 600px;
+  max-width: 455px;
   margin-bottom: 20px;
 }
 .header .hero-section .btn-contact {
@@ -316,64 +350,6 @@ html body {
   transition: background-color 0.3s ease;
 }
 
-main .hero-section {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  text-align: center;
-  align-items: center;
-  border-bottom: 2px solid white;
-  padding-bottom: 80px;
-}
-main .hero-section .hero-title {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  line-height: 40px;
-  margin: 0 0 10px 0;
-}
-main .hero-section .hero-title span {
-  position: relative;
-  display: inline-block;
-}
-main .hero-section .hero-title span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 97%;
-  height: 4px;
-  background-color: #4ee1a0;
-}
-main .hero-section .hero-bio {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  max-width: 600px;
-  margin-bottom: 20px;
-}
-main .hero-section .btn-contact {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 2.29px;
-  cursor: pointer;
-  position: relative;
-  padding: 5px;
-}
-main .hero-section .btn-contact::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  bottom: -8px;
-  width: 91%;
-  height: 2px;
-  background-color: #4ee1a0;
-  transition: background-color 0.3s ease;
-}
 main .skills-section {
   display: flex;
   flex-direction: column;
@@ -398,7 +374,7 @@ main .skills-section .skill-card p {
 main .skills-section .lines_right {
   position: absolute;
   width: 55%;
-  right: -4%;
+  right: -3%;
   top: 90%;
 }
 main .projects-section .projects-headers {
