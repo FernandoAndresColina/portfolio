@@ -1,6 +1,12 @@
 @use "../abstracts" as abs;
 
 main {
+  .divider-main {
+    display: block;
+    @include abs.breakpoint(tablet) {
+      display: none;
+    }
+  }
   .skills-section {
     display: flex;
     flex-direction: column;
@@ -8,9 +14,12 @@ main {
     text-align: center;
     margin-top: 20px;
     position: relative;
-
-    border-bottom: 2px solid white;
     padding-bottom: 20px;
+    @include abs.breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: start;
+    }
     .skill-card {
       h3 {
         color: abs.$white-color;
@@ -27,11 +36,12 @@ main {
     .lines_right {
       position: absolute;
       width: 55%;
-      right: -3%;
+      right: -2%;
       top: 90%;
     }
   }
   .projects-section {
+    justify-content: center;
     .projects-headers {
       display: flex;
       justify-content: space-between;
