@@ -134,10 +134,9 @@ html body {
 }
 .footer .contact-container .footer-lines-circule {
   position: absolute;
-  width: 50%;
-  max-width: 1110px;
-  left: 0;
-  bottom: 227px;
+  width: 100%;
+  left: -55%;
+  bottom: 31%;
 }
 .footer .footer-bottom {
   width: 100%;
@@ -394,9 +393,9 @@ main .skills-section .skill-card p {
 }
 main .skills-section .lines_right {
   position: absolute;
-  width: 55%;
-  right: -2%;
-  top: 90%;
+  width: 50%;
+  right: -4%;
+  top: 95%;
 }
 main .projects-section {
   justify-content: center;
