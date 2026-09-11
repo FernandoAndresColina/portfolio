@@ -45,7 +45,7 @@
       width: 18%;
       z-index: 2;
       right: -11%;
-      top: 719%;
+      top: 537%;
     }
   }
 
@@ -66,6 +66,9 @@
     h1 {
       color: abs.$white-color;
       font-size: 24px;
+      @include abs.breakpoint(tablet) {
+        font-size: 32px;
+      }
     }
     nav {
       margin-bottom: 50px;
@@ -77,6 +80,9 @@
         @include abs.reset-list();
         img {
           width: 20px;
+          @include abs.breakpoint(tablet) {
+            width: 24px;
+          }
         }
       }
     }

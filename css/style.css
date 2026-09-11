@@ -261,7 +261,7 @@ html body {
     width: 18%;
     z-index: 2;
     right: -11%;
-    top: 719%;
+    top: 537%;
   }
 }
 .header-container {
@@ -283,6 +283,11 @@ html body {
   color: rgb(255, 255, 255);
   font-size: 24px;
 }
+@media (min-width: 768px) {
+  .header-container h1 {
+    font-size: 32px;
+  }
+}
 .header-container nav {
   margin-bottom: 50px;
 }
@@ -300,6 +305,11 @@ html body {
 }
 .header-container nav ul img {
   width: 20px;
+}
+@media (min-width: 768px) {
+  .header-container nav ul img {
+    width: 24px;
+  }
 }
 .header .profile-img {
   position: relative;
