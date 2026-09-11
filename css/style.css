@@ -52,6 +52,11 @@ html body {
   flex-direction: column;
   gap: 40px;
 }
+@media (min-width: 768px) {
+  .footer .contact-container {
+    align-items: center;
+  }
+}
 .footer .contact-container .contact-text {
   text-align: center;
   max-width: 445px;
@@ -61,10 +66,20 @@ html body {
   font-size: 40px;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .footer .contact-container .contact-text h2 {
+    font-size: 72px;
+  }
+}
 .footer .contact-container .contact-text p {
   color: #d9d9d9;
   font-size: 15px;
   line-height: 24px;
+}
+@media (min-width: 768px) {
+  .footer .contact-container .contact-text p {
+    font-size: 18px;
+  }
 }
 .footer .contact-container .contact-form {
   width: 100%;
@@ -138,6 +153,13 @@ html body {
   left: -55%;
   bottom: 31%;
 }
+@media (min-width: 768px) {
+  .footer .contact-container .footer-lines-circule {
+    width: 50%;
+    left: -28%;
+    bottom: 17%;
+  }
+}
 .footer .footer-bottom {
   width: 100%;
   max-width: 1110px;
@@ -154,10 +176,21 @@ html body {
   gap: 20px;
   margin-top: 40px;
 }
+@media (min-width: 768px) {
+  .footer .footer-bottom .footer-nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer .footer-bottom .footer-nav-container h3 {
   color: rgb(255, 255, 255);
   font-size: 24px;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .footer .footer-bottom .footer-nav-container h3 {
+    font-size: 32px;
+  }
 }
 .footer .footer-bottom .footer-nav-container .footer-nav ul {
   display: flex;
@@ -168,8 +201,18 @@ html body {
   gap: 25px;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .footer .footer-bottom .footer-nav-container .footer-nav ul {
+    margin: 0;
+  }
+}
 .footer .footer-bottom .footer-nav-container .footer-nav ul img {
   width: 20px;
+}
+@media (min-width: 768px) {
+  .footer .footer-bottom .footer-nav-container .footer-nav ul img {
+    width: 24px;
+  }
 }
 
 .header {
@@ -401,6 +444,7 @@ main .skills-section .lines_right {
   main .skills-section .lines_right {
     width: 30%;
     top: 75%;
+    right: -2%;
   }
 }
 main .projects-section {

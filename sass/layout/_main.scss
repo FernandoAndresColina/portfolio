@@ -41,6 +41,7 @@ main {
       @include abs.breakpoint(tablet) {
         width: 30%;
         top: 75%;
+        right: -2%;
       }
     }
   }
