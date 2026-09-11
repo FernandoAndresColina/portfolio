@@ -31,9 +31,14 @@
     top: 30%;
     z-index: -1;
     @include abs.breakpoint(tablet) {
-      width: 50%;
-      left: -18%;
-      top: 107%;
+      width: 43%;
+      left: -12%;
+      top: 15%;
+    }
+    @include abs.breakpoint(desktop) {
+      width: 43%;
+      left: -17%;
+      top: 8%;
     }
   }
   .oval {
@@ -42,10 +47,14 @@
     right: -90%;
     top: 67%;
     @include abs.breakpoint(tablet) {
-      width: 18%;
+      width: 132px;
       z-index: 2;
       right: -11%;
       top: 537%;
+    }
+    @include abs.breakpoint(desktop) {
+      right: 31%;
+      top: 545%;
     }
   }
 
@@ -69,11 +78,16 @@
       @include abs.breakpoint(tablet) {
         font-size: 32px;
       }
+      @include abs.breakpoint(desktop) {
+      }
     }
     nav {
       margin-bottom: 50px;
       @include abs.breakpoint(tablet) {
         margin: 0;
+      }
+      @include abs.breakpoint(desktop) {
+        padding-right: 30px;
       }
 
       ul {
@@ -97,12 +111,17 @@
 
     @include abs.breakpoint(tablet) {
       position: absolute;
-      width: 45%;
+      width: 331px;
       z-index: 1;
       right: -3%;
       top: 0%;
       padding-top: 97px;
       background: abs.$person-bg;
+    }
+    @include abs.breakpoint(desktop) {
+      width: 406px;
+      right: 0%;
+      top: 0%;
     }
   }
 
@@ -117,6 +136,10 @@
     @include abs.breakpoint(tablet) {
       align-items: start;
       text-align: left;
+    }
+    @include abs.breakpoint(desktop) {
+      margin-bottom: 270px;
+      padding: 0;
     }
 
     .hero-title {
@@ -140,6 +163,13 @@
           display: none;
         }
       }
+      @include abs.breakpoint(desktop) {
+        .mobile-break1 {
+          display: none;
+        }
+        max-width: 800px;
+        font-size: 88px;
+      }
       span {
         position: relative;
         display: inline-block;
@@ -161,6 +191,9 @@
       line-height: 30px;
       max-width: 455px;
       margin-bottom: 20px;
+      @include abs.breakpoint(desktop) {
+        margin-bottom: 66px;
+      }
     }
     .btn-contact {
       @include abs.btn-contact-me();
