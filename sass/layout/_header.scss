@@ -92,10 +92,16 @@
 
       ul {
         @include abs.reset-list();
+
         img {
           width: 20px;
           @include abs.breakpoint(tablet) {
             width: 24px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            filter: brightness(0) saturate(100%) invert(64%) sepia(43%)
+              saturate(548%) hue-rotate(115deg) brightness(91%) contrast(92%);
           }
         }
       }
