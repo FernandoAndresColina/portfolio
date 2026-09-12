@@ -607,7 +607,7 @@ main .skills-section .lines_right {
 @media (min-width: 1200px) {
   main .skills-section .lines_right {
     width: 23%;
-    top: 60%;
+    top: 116%;
     right: -4%;
   }
 }
